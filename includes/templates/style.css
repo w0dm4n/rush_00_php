@@ -1,0 +1,176 @@
+BODY
+{
+	background-color: #000000;
+	background-image: url(http://free.wallpaperbackgrounds.com/men/sexy/192659-33798.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#top_frame
+{
+	position: absolute;
+	display: block;
+	height: 120px;
+	width: auto;
+	min-width: 2100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	color: #FFFFFF;
+	border-radius: 10px;
+	background-color: grey;
+	box-shadow: 5px 5px 5px #000000;
+}
+#top_frame .logo
+{
+	margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.connexion
+{
+	width: 20vw;
+	height: 100vw;
+	border-radius: 10px;
+	font-style: 5vw;
+	font-family: cursive;
+	margin-left: 1825px;
+	margin-top: -107px;
+	position: absolute;
+	color: black;
+}
+#title
+{
+	color: #FFFFFF;
+    display: inline-block;
+    font-size: 32px;
+    font-family: cursive;
+    margin-left: 120px;
+    margin-top: 20px;
+    position : absolute;
+	text-shadow: 10px 10px 7px #000000;
+}
+#left_frame
+{
+	background-color: grey;
+	margin-top: 147px;
+	margin-left: 20px;
+	height: 1100px;
+	width: 180px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+}
+#left_frame .menu
+{
+	margin-top: 10px;
+	margin-left: 8px;
+}
+INPUT
+{
+	box-shadow: 5px 5px 5px #000000;
+}
+UL
+{
+	height: 40px;
+	padding: 1px;
+	list-style-type: none;
+	text-align: center;
+}
+LI > A
+{
+	font-size: 20px;
+	font-family: cursive;
+	align: center;
+	display: block;
+	width: 150px;
+	color: black;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 1px 2px 1px #000000 inset;
+	border: 1px solid;
+	padding: 5px;
+}
+LI > A:hover
+{
+	background-color:#D3D3D3;
+	border-color: #696969;
+}
+LI:hover > UL
+{
+	display: flex;
+}
+LI > UL
+{
+	display: none;
+	position: absolute;
+}
+#right_frame
+{
+	background-color: grey;
+	margin-top: 147px;
+	margin-left: 1890px;
+	height: 1100px;
+	width: 170px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	font-family: cursive;
+	padding-left: 10px;
+	font-size: 1vw;
+}
+#right_frame .panier
+{
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 2px;
+	height: 400px;
+	width: 140px;
+	border-radius: 10px;
+	position: absolute;
+	border: 3px black solid ;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-family: monospace;
+}
+#middle_frame
+{
+	background-color: grey;
+	opacity: 0.7;
+	border: white solid 1px;
+	margin-top: 165px;
+	margin-left: 240px;
+	height: 1050px;
+	width: 1600px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 1vw;
+	font-family: monospace;
+}
+.TE
+{
+	margin-top: 5px;
+    margin-left: 0px;
+}
+#middle_frame .message
+{
+	font-family: monospace;
+	background-color: white;
+	opacity: 0.7;
+	border: white solid 1px;
+	margin-top: 30px;
+	margin-left: 85px;
+	height: 900px;
+	width: 1400px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 1vw;
+}
