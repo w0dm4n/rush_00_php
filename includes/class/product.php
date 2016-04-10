@@ -163,7 +163,6 @@ class Product
 										else
 										{
 											$database->Query('UPDATE products SET name = "'.$_POST["product_name"].'", category = "'.$category.'", image = "'.$image.'", price = "'.$_POST["product_price"].'", color = "'.$_POST["product_color"].'", stock = "'.$_POST["product_stock"].'" WHERE id = "'.$assoc["id"].'"');
-											//$database->Query('INSERT INTO products(name,category,image,price,color,stock) VALUES("'.$_POST["product_name"].'", "'.$category.'", "'.$image.'", "'.$_POST["product_price"].'", "'.$_POST["product_color"].'", "'.$_POST["product_stock"].'")');
 											print_message("Votre produit a été modifié avec succès :)", "success");
 										}
 									}
