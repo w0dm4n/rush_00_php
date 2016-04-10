@@ -24,7 +24,7 @@
 					echo '<FORM class="connexion" method="POST">
 						Login: <br/><INPUT type="text" name="login"></INPUT><BR/>
 						Password: <br/><INPUT type="password" name="password"></INPUT><BR/>
-						<INPUT style="margin-left: 45px;margin-top: 5px;" type="submit" name="connection" value="Validate"></INPUT>
+						<INPUT style="margin-left: 45px;margin-top: 5px;" type="submit" name="connection" value="Valider"></INPUT>
 						</FORM>';
 				}
 			}
