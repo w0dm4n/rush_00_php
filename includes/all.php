@@ -2,6 +2,7 @@
 /* INCLUDE CLASS */
 require_once("class/database.php");
 require_once("class/account.php");
+require_once("class/product.php");
 /* INCLUDE CLASS */
 
 /* INCLUDE FUNCTION */

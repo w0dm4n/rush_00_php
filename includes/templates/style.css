@@ -47,7 +47,7 @@ BODY
     margin-left: 120px;
     margin-top: 20px;
     position : absolute;
-	text-shadow: 10px 10px 7px #000000;
+    text-shadow: 10px 10px 7px #000000;
 }
 #left_frame
 {
@@ -116,8 +116,7 @@ LI > UL
 	border-radius: 10px;
 	position: absolute;
 	box-shadow: 10px 10px 10px #000000;
-	padding-top: 10px;
-	font-family: cursive;
+	padding-top: 10px; 
 	padding-left: 10px;
 	font-size: 1vw;
 }
@@ -137,6 +136,106 @@ LI > UL
 }
 #middle_frame
 {
+	border: white solid 1px;
+	margin-top: 165px;
+	margin-left: 240px;
+	height: 1050px;
+	width: 1600px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	font-family: cursive;
+	padding-left: 10px;
+	font-size: 1vw;
+}
+.TE
+{
+	margin-top: 5px;
+    margin-left: 0px;
+}
+.top_right
+{
+	margin-top: 20px;
+	margin-left: 850px;
+	height: 450px;
+	width: 700px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	font-family: cursive;
+	padding-left: 10px;
+	font-size: 1vw;
+}
+.top_left
+{
+	margin-top: 20px;
+	margin-left: 30px;
+	height: 450px;
+	width: 700px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	font-family: cursive;
+	padding-left: 10px;
+	font-size: 1vw;
+}
+.bot_left
+{
+	margin-top: 530px;
+	margin-left: 30px;
+	height: 450px;
+	width: 700px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	font-family: cursive;
+	padding-left: 10px;
+	font-size: 1vw;
+}
+.bot_right
+{
+	margin-top: 530px;
+	margin-left: 850px;
+	height: 450px;
+	width: 700px;
+	border-radius: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 10px #000000;
+	padding-top: 10px;
+	font-family: cursive;
+	padding-left: 10px;
+	font-size: 1vw;
+}
+.clignotement
+{
+	border-radius: 10px;
+}
+.clignotement:hover
+{
+	opacity: 0.7;
+	border-radius: 10px;
+	border: solid 3px;
+	position: relative;
+}
+TD
+{
+	border: solid 2px #f5f5dc;
+	width: 140px;
+	height: 100px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #000000;
+}
+P
+{
+	margin-left: 1px;
+	text-align: left;
+}
+#middle_frame_error
+{
 	background-color: grey;
 	opacity: 0.7;
 	border: white solid 1px;
@@ -152,12 +251,7 @@ LI > UL
 	font-size: 1vw;
 	font-family: monospace;
 }
-.TE
-{
-	margin-top: 5px;
-    margin-left: 0px;
-}
-#middle_frame .message
+#middle_frame_error .message
 {
 	font-family: monospace;
 	background-color: white;

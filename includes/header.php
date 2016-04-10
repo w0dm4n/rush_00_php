@@ -30,9 +30,16 @@
 			}
 			else
 			{
+				$database = new Database();
+				$database->StartConnection(DATABASE_HOST, DATABASE_USER, DATABASE_PASSWORD, DATABASE_NAME);
+				$database->Query('SELECT * FROM accounts WHERE account = "'.$_SESSION["account"].'"');
+				$database->Fetch_Assoc();
 				echo '<div class="connexion"/>
-				<br/> <a href="?page=profile">Mon compte</a><br/>
-				<a href="?page=logout">Déconnexion</a></div>';
+				<br/> <a href="?page=profile">Mon compte</a><br/>';
+				if ($database->c_assoc["admin"] == 1)
+					echo '<a href="?page=admin">Panel d\'administration</a><br/>';
+				echo '<a href="?page=logout">Déconnexion</a>
+					</div>';
 			}
 		echo '</DIV>';
 ?>

@@ -4,7 +4,7 @@
 				<UL>
 					<LI><A href="?page=home">Home</A>
 					</LI><BR/>
-					<LI><A href="#">Categories</A>					
+					<LI><A href="?page=category">Categories</A>					
 					</LI><BR/>';
 					if (empty($_SESSION["account"]))
 						echo '<LI><A href="?page=register">Inscription</A></LI><BR/>';	
