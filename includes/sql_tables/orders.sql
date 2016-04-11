@@ -1,0 +1,1 @@
+CREATE TABLE `orders` (`id` int(11) NOT NULL AUTO_INCREMENT, `all_product` text NOT NULL, `by_who` text NOT NULL, PRIMARY KEY (`id`))

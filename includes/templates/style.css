@@ -20,6 +20,29 @@ BODY
 	background-color: grey;
 	box-shadow: 5px 5px 5px #000000;
 }
+#top_frame .search
+{
+	width: 465px;
+	height: 50px;
+}
+.search
+{
+	background-color: pink;
+	font-family: cursive;
+	border-radius: 5px;
+	position: absolute;
+	border: solid 1px black;
+	box-shadow: 3px 3px 3px #000000;
+	margin-left: 1330px;
+	margin-top: -75px;
+	color: black;
+}
+.moche
+{
+	border-radius: 2px; 
+	color:black;
+	width: 100px;"
+}
 #top_frame .logo
 {
 	margin-top: 10px;
@@ -41,9 +64,9 @@ BODY
 {
 	color: #FFFFFF;
     display: inline-block;
-    font-size: 32px;
+    font-size: 50px;
     font-family: cursive;
-    margin-left: 120px;
+    margin-left: 100px;
     margin-top: 20px;
     position : absolute;
     text-shadow: 10px 10px 7px #000000;
@@ -133,7 +156,6 @@ LI > UL
 	padding-left: 10px;
 	font-family: monospace;
 }
-
 .total
 {
 	background-color: white;
@@ -303,7 +325,7 @@ P
 {
 	opacity: 0.7;
 	border: solid 3px;
-	background-color: blue;
+	background-color: #F9429E;
 	width: 150px;
 	height: 170px;
 	border-radius: 10px;

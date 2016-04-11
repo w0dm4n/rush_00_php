@@ -8,7 +8,7 @@
 					</LI><BR/>';
 					if (empty($_SESSION["account"]))
 						echo '<LI><A href="?page=register">Inscription</A></LI><BR/>';	
-				echo '</UL>
+				echo '<LI><A href="?page=vitrine">Vitrine</A></LI>	</UL>
 				</DIV>
 			</DIV>';
 ?>

@@ -41,5 +41,11 @@
 				echo '<a href="?page=logout">Déconnexion</a>
 					</div>';
 			}
-		echo '</DIV>';
+		echo '<DIV>
+				<FORM class="search" method="POST">
+						<FONT style="margin-left: 10px;" size=4 >Pour trouver votre plaisir...</FONT>
+							<INPUT style="margin-top: 15px;" type="text" name="search"></INPUT>
+							<INPUT class="moche" type="submit" name="Chercher" value="Chercher"></INPUT>					
+						</FORM>
+					</DIV></DIV>';
 ?>

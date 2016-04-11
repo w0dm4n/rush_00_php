@@ -14,8 +14,13 @@ echo '<DIV id="middle_frame" style="overflow-x: hidden; overflow-y: scroll;">';
 				echo '<DIV class="vitrine">
 					<P class="MEP"><FONT size=3>'.$database->c_assoc["name"].'</FONT></P>
 					<P class="MEPIMG"><IMG class="TE" border="1" style="border-color: pink; border-radius: 10px" width="100" height="75" src="data:image/png;base64,'.$database->c_assoc["image"].'" alt="tour et fion" title="tour et fion"/><BR/><P>
-					<P style="margin-top: -15px;"><FONT class="MEP" size=3>Stock: '.$database->c_assoc["stock"].'</FONT></P>
-					<P style="margin-top: -25px;"><FONT class="MEP" size=3>'.$database->c_assoc["price"].'€</FONT><a href="?page=basket&add&product_id='.$database->c_assoc["id"].'"><INPUT style="margin-left: 30px" type="submit" name="submit" value="Ajouter"></INPUT></P></a>
+					';
+					if ($database->c_assoc["stock"] == "0")
+						echo '<P style="margin-top: -15px;"><FONT class="MEP" size=3>Stock: Vide</FONT></P>';
+					else
+						echo '<P style="margin-top: -15px;"><FONT class="MEP" size=3>Stock: '.$database->c_assoc["stock"].'</FONT></P>';
+					
+					echo '<P style="margin-top: -25px;"><FONT class="MEP" size=3>'.$database->c_assoc["price"].'€</FONT><a href="?page=basket&add&product_id='.$database->c_assoc["id"].'"><INPUT style="margin-left: 30px" type="submit" name="submit" value="Ajouter"></INPUT></P></a>
 				</DIV>';
 			}
 			echo '</table>';
@@ -35,8 +40,13 @@ echo '<DIV id="middle_frame" style="overflow-x: hidden; overflow-y: scroll;">';
 				echo '<DIV class="vitrine">
 					<P class="MEP"><FONT size=3>'.$database->c_assoc["name"].'</FONT></P>
 					<P class="MEPIMG"><IMG class="TE" border="1" style="border-color: pink; border-radius: 10px" width="100" height="75" src="data:image/png;base64,'.$database->c_assoc["image"].'" alt="tour et fion" title="tour et fion"/><BR/><P>
-					<P style="margin-top: -15px;"><FONT class="MEP" size=3>Stock: '.$database->c_assoc["stock"].'</FONT></P>
-					<P style="margin-top: -25px;"><FONT class="MEP" size=3>'.$database->c_assoc["price"].'€</FONT><a href="?page=basket&add&product_id='.$database->c_assoc["id"].'"><INPUT style="margin-left: 30px" type="submit" name="submit" value="Ajouter"></INPUT></P></a>
+					';
+					if ($database->c_assoc["stock"] == "0")
+						echo '<P style="margin-top: -15px;"><FONT class="MEP" size=3>Stock: Vide</FONT></P>';
+					else
+						echo '<P style="margin-top: -15px;"><FONT class="MEP" size=3>Stock: '.$database->c_assoc["stock"].'</FONT></P>';
+					
+					echo '<P style="margin-top: -25px;"><FONT class="MEP" size=3>'.$database->c_assoc["price"].'€</FONT><a href="?page=basket&add&product_id='.$database->c_assoc["id"].'"><INPUT style="margin-left: 30px" type="submit" name="submit" value="Ajouter"></INPUT></P></a>
 				</DIV>';
 			}
 			echo '</table>';

@@ -7,7 +7,16 @@ function install_database($host, $user, $password, $db_name)
 	$database->StartConnection($host, $user, $password, $db_name);
 	$database->Query(file_get_contents("includes/sql_tables/accounts.sql"));
 	$database->Query(file_get_contents("includes/sql_tables/products.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data_1.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data_2.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data_3.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data_4.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data_5.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/products_data_6.sql"));
 	$database->Query(file_get_contents("includes/sql_tables/category.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/category_data.sql"));
+	$database->Query(file_get_contents("includes/sql_tables/orders.sql"));
 }
 
 function update_configuration($host, $user, $password, $db_name)

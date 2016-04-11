@@ -40,7 +40,7 @@
 						<P>
 							<FONT size=3>'.$price.' €</FONT>
 						</P>
-						<INPUT style="box-shadow: 0px 0px 0px;" type="submit" name="submit" value="Valider mon panier"></INPUT>
+						<a style="box-shadow: 0px 0px 0px;font-size:15px;" href="?page=basket&validate">Valider</a>
 					</FORM>
 				</DIV>';
 

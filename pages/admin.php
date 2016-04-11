@@ -154,6 +154,54 @@
 						$product->EditProduct();
 					break ;
 
+					case "add_category":
+						if (isset($_POST["send"]))
+						{
+							if (!empty($_POST["cat_name"]))
+							{
+								$database->Query('INSERT INTO category(cat_name) VALUES ("'.secure($_POST["cat_name"], 1).'")');
+								print_message("La catégorie a été ajouté avec succès", "success");
+							}
+							else
+								print_message("Un champ est manquant", "error");
+						}
+						else
+						{
+							echo '<form method="post"/>
+									Nom de la catégorie<br/>
+									<input type="text" name="cat_name"/><br/>
+									<input type="submit" name="send" value="Ajouter"/>
+								<form/>';
+						}
+					break ;
+
+					case "see_orders":
+						$query = $database->Query('SELECT * FROM orders');
+						$row = $database->Get_Rows($query);
+						if ($row)
+						{
+							while ($assoc = $database->Fetch_Assoc($query))
+							{
+								echo '<fieldset>'.$assoc["by_who"].'<hr>';
+									$explode = explode(";", $assoc["all_product"]);
+									foreach($explode as $value)
+									{
+										$aa = explode(":", $value);
+										$database->Query('SELECT * FROM products WHERE id = "'.$aa[0].'"');
+										$database->Fetch_Assoc();
+										echo ''.$database->c_assoc["name"].' x'.$aa[1].'';
+										echo "<br/>";
+									}
+
+								echo '</fieldset>';
+							}
+						}
+						else
+						{
+							print_message("Il n'y a pas de commandes en cours !");
+						}
+					break ;
+
 					default:
 						redirect("admin", 0);
 					break ;
@@ -167,7 +215,9 @@
 					<hr>
 					<a href="?page=admin&action=add_product">Ajouter un produit</a>
 					<br/><a href="?page=admin&action=delete_product">Supprimer un produit</a>
-					<br/><a href="?page=admin&action=edit_product">Modifier un produit</a>';
+					<br/><a href="?page=admin&action=edit_product">Modifier un produit</a>
+					<br/><a href="?page=admin&action=add_category">Ajouter une catégorie</a>
+					<hr><a href="?page=admin&action=see_orders">Voir toutes les commandes</a>';
 			}
 			echo '</center>
 				</DIV>

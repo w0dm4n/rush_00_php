@@ -1,1 +1,1 @@
-CREATE TABLE `products` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `category` int(11) NOT NULL, `image` varchar(255) NOT NULL, `price` varchar(50) NOT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `products` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `category` int(11) NOT NULL, `image` text NOT NULL, `price` varchar(50) NOT NULL, `color` text, `stock` int(11) NOT NULL, PRIMARY KEY (`id`))

@@ -1,1 +1,1 @@
-CREATE TABLE `accounts` (`id` int(11) NOT NULL AUTO_INCREMENT, `account` varchar(255) NOT NULL, `password` varchar(255) NOT NULL, `admin` int(11) NOT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `accounts` (`id` int(11) NOT NULL AUTO_INCREMENT,`account` varchar(255) NOT NULL, `password` varchar(255) NOT NULL, `admin` int(11) NOT NULL, `banned` int(11) NOT NULL, `user_ip` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`))
